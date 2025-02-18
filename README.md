@@ -66,3 +66,11 @@ Serving HTTP on :: port 8000 (http://[::]:8000/) ...
 ::ffff:127.0.0.1 - - [15/Feb/2025 11:58:10] "POST / HTTP/1.1" 501 -
 ::ffff:127.0.0.1 - - [15/Feb/2025 11:58:10] "POST / HTTP/1.1" 501 -
 </pre>
+
+### Proxy Demo
+
+- Intercept web traffic on Burp Suite
+- python -m http.server
+- ./fuzzer http://127.0.0.1:8000 param1 param2 --post --proxy http://127.0.0.1:8080
+
+https://github.com/user-attachments/assets/da5cf73a-799a-4207-b208-c0cc54c6b4aa
